@@ -43,9 +43,9 @@ FROM v$instance;
 PROMPT
 PROMPT === Oracle Database Version ===
 
-SELECT banner_full
+SELECT banner
 FROM v$version
-WHERE banner LIKE 'Oracle Database%';
+WHERE banner LIKE 'Oracle%';
 
 PROMPT
 PROMPT === Current Container ===
@@ -67,3 +67,4 @@ PROMPT
 PROMPT ============================================================
 PROMPT INVENTORY COMPLETE
 PROMPT ============================================================
+
